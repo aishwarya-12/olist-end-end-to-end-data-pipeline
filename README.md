@@ -2,14 +2,13 @@
 
 ## 📌 Overview
 
-This project implements a modern end-to-end data pipeline using the Olist e-commerce dataset. It focuses on building a scalable ETL workflow with incremental data processing, loading curated data into Snowflake, and enabling analytics on top of a structured data model.
+This project implements a modern end-to-end data pipeline using the Olist e-commerce dataset. It focuses on building a scalable ETL workflow with incremental data processing, and enabling analytics on top of a structured data model.
 
 ---
 
 ## 🛠️ Tech Stack
 
 * Databricks (Apache Spark)
-* Snowflake (Data Warehouse)
 * Python (PySpark, Pandas)
 
 ---
@@ -23,7 +22,6 @@ Raw Data → Bronze Layer → Silver Layer → Gold Layer → Snowflake → Anal
 * **Bronze Layer**: Raw ingestion of Olist dataset
 * **Silver Layer**: Data cleaning, transformations, and joins
 * **Gold Layer**: Aggregated and business-ready data
-* **Snowflake**: Final storage for analytics and querying
 
 ---
 
@@ -51,28 +49,13 @@ This project implements incremental loading to improve performance and avoid ful
 ## 📊 Dataset
 
 * Olist E-commerce Dataset (Brazilian marketplace data)
-* Includes orders, customers, products, payments, and reviews
-
----
-
-## 📁 Project Structure
-
-```
-olist-end-to-end-data-pipeline/
-│
-├── notebooks/        # Databricks notebooks (ETL, EDA)
-├── src/              # ETL scripts (extract, transform, load)
-├── snowflake/        # SQL scripts for schema and loading
-├── data/             # Sample data (not full dataset)
-├── README.md
-└── requirements.txt
-```
+* Includes orders, customers, products, payments, sellers, and reviews
 
 ---
 
 ## 🚧 Project Status
 
-Work in progress – currently implementing ETL pipeline and incremental data loading.
+Work in progress – currently implementing incremental data loading.
 
 ---
 
