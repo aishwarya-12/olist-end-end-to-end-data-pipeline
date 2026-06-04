@@ -9,14 +9,15 @@ This project implements a modern end-to-end data pipeline using the Olist e-comm
 ## 🛠️ Tech Stack
 
 * Databricks (Apache Spark)
-* Python (PySpark, Pandas)
+* Python (PySpark)
+* Microsoft Power BI
 
 ---
 
 ## 🔄 Pipeline Architecture
 
 ```
-Raw Data → Bronze Layer → Silver Layer → Gold Layer → Snowflake → Analytics
+Raw Data → Bronze Layer → Silver Layer → Gold Layer → Power BI Analytics
 ```
 
 * **Bronze Layer**: Raw ingestion of Olist dataset
@@ -55,7 +56,7 @@ This project implements incremental loading to improve performance and avoid ful
 
 ## 🚧 Project Status
 
-Work in progress – currently implementing incremental data loading.
+Completed few analytics dashboards building a few more 
 
 ---
 
@@ -63,7 +64,6 @@ Work in progress – currently implementing incremental data loading.
 
 * Add advanced analytics and dashboards
 * Implement ML models for predictive insights
-* Automate pipeline with scheduling (Airflow / Databricks Jobs)
 
 ---
 
